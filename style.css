@@ -1,0 +1,139 @@
+html {
+    background-color: black;
+    color: white;
+    user-select: none;
+}
+#header {
+    color: #D4AF37;
+    font-family: cursive;
+    font-size: 12px;
+    display: flex;
+    justify-content: flex-start;
+}
+#header h1 {
+    margin-top:10px;
+    margin-bottom:10px;
+}
+
+#calculator {
+    background-color: #D4AF37;
+    border-radius: 5px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-left:450px;
+    margin-right:450px;
+    flex: 0;
+    padding: 0px 5px 5px 5px;
+
+}
+#calculator .output {
+    display:flex;
+    background-color: #c7b659;
+    padding-right: 5px;
+    margin-right: 5px;
+    margin-left: 5px;
+    margin-bottom: 0px;
+    border: 3px solid black;
+    margin-top: 5px;
+    color: #000000;
+    min-width: 432.75px;
+    min-height: 88px;
+    align-items: center;
+    justify-content: right;
+    color: #681b52;
+    font-size: 43px;
+    border-radius: 5px;
+}
+#calculator .firstRow {
+    display:flex;
+    flex-direction: row;
+    color: black;
+    min-width: 443.75px;    
+}
+#calculator .firstRow h2 {
+    border: 3px solid black;
+    padding:20px;
+    background-color: #681b52;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    border-radius: 5px;
+    color: #d8be6a;
+}
+
+#calculator .secondRow {
+    display:flex;
+    flex-direction: row;
+    color: black;
+    min-width: 443.75px;    
+}
+#calculator .secondRow h2 {
+    border: 3px solid black;
+    padding:20px;
+    background-color: #681b52;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    border-radius: 5px;
+    color: #d8be6a;
+}
+#calculator .thirdRow {
+    display:flex;
+    flex-direction: row;
+    color: black;
+    min-width: 443.75px;    
+}
+#calculator .thirdRow h2 {
+    border: 3px solid black;
+    padding:20px;
+    background-color: #681b52;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    border-radius: 5px;
+    color: #d8be6a;
+}
+#calculator .forthRow {
+    display:flex;
+    flex-direction: row;
+    color: black;
+    min-width: 443.75px;    
+}
+#calculator .forthRow h2 {
+    border: 3px solid black;
+    padding:20px;
+    background-color: #681b52;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    border-radius: 5px;
+    color: #d8be6a;
+}
+#calculator .fifthRow {
+    display:flex;
+    flex-direction: row;
+    color: black;
+    min-width: 443.75px;    
+}
+#calculator .fifthRow h2 {
+    border: 3px solid black;
+    padding:20px;
+    background-color: #681b52;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    border-radius: 5px;
+    color: #d8be6a;
+}
