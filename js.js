@@ -54,10 +54,10 @@ clear.addEventListener("click", (e) => {
 //Convert numbers from positive to negative and vice versa
 switchNumber.addEventListener("click", (e) => {
     if(operator != "") {
-      secondInput = -(secondInput)
+      secondInput = `-${secondInput}`
       output.innerText = secondInput
-    } else if (operator == "") {
-      firstInput = -(firstInput)
+    } else if (operator == ""){
+      firstInput = `-${firstInput}`
       output.innerText = firstInput
     } 
 })
@@ -79,7 +79,7 @@ numbers.forEach((number) => {
     if (operator == "" && firstInput.length < 14 && secondInput.length < 14) {
       firstInput += e.target.innerText
       output.innerText = firstInput
-    } else if(secondInput.length < 14  && firstInput.length < 14){
+    } else if(secondInput.length < 14  && firstInput.length < 14 && operator != ""){
       secondInput += e.target.innerText
       output.innerText = secondInput
     } else {
