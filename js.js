@@ -5,10 +5,32 @@ const switchNumber = document.querySelector(".switchNumber");
 const operators = document.querySelectorAll(".operators");
 const numbers = document.querySelectorAll(".numbers");
 const dot = document.querySelector(".dot");
+const body = document.querySelector("body");
 let firstInput = ""
 let secondInput = ""
 let operator = "";
-
+//Cheap implementation keyword
+body.addEventListener("keydown", (e) => {
+  if (operator == "" && firstInput.length < 14 && secondInput.length < 14 &&
+    (e.key == "0" || e.key == "1" || e.key == "2" || e.key == "3" || e.key == "4" || e.key == "5"
+    || e.key == "6" || e.key == "7" || e.key == "8" || e.key == "9")
+  ) {
+    firstInput += e.key
+    output.innerText = firstInput
+  } else if(secondInput.length < 14  && firstInput.length < 14 &&
+    (e.key == "0" || e.key == "1" || e.key == "2" || e.key == "3" || e.key == "4" || e.key == "5"
+    || e.key == "6" || e.key == "7" || e.key == "8" || e.key == "9")){
+    secondInput += e.key
+    output.innerText = secondInput
+  } else if (secondInput.length > 14 || firstInput.length > 14 &&
+    (e.key == "0" || e.key == "1" || e.key == "2" || e.key == "3" || e.key == "4" || e.key == "5"
+    || e.key == "6" || e.key == "7" || e.key == "8" || e.key == "9")){
+    output.innerText = "Max length 14"
+    firstInput = ""
+    secondInput = ""
+    operator = ""
+  }
+})
 //Switch buttons color
 buttons.forEach(switchColor)
 function switchColor(button) {
