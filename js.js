@@ -108,9 +108,9 @@ operators.forEach((op) => {
             if(secondInput == 0) {
               output.innerText = "Иди нахуй!"
             } else {
-            output.innerText = (Number(firstInput) / Number(secondInput)).toFixed(5)
+            output.innerText = parseFloat((Number(firstInput) / Number(secondInput)).toFixed(5))
             if(output.innerText.length < 14) {
-            firstInput = output.innerText
+            firstInput = (output.innerText)
             secondInput = ""
             operator = ""
           } else {
