@@ -40,6 +40,9 @@ button.addEventListener("mousedown", () => {
 button.addEventListener("mouseup", () => {
     button.style.backgroundColor = "#681b52"
 })
+button.addEventListener("mouseout", () => {
+  button.style.backgroundColor = "#681b52"
+})
 button.addEventListener("click", () => {
     let content = button.textContent;
     output.textContent = content;
