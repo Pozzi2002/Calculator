@@ -35,13 +35,13 @@ body.addEventListener("keydown", (e) => {
 buttons.forEach(switchColor)
 function switchColor(button) {
 button.addEventListener("mousedown", () => {
-    button.style.backgroundColor = "#b35397"
+    button.style.backgroundColor = "#a19e9e"
 })
 button.addEventListener("mouseup", () => {
-    button.style.backgroundColor = "#681b52"
+    button.style.backgroundColor = "#e2dada"
 })
 button.addEventListener("mouseout", () => {
-  button.style.backgroundColor = "#681b52"
+  button.style.backgroundColor = "#e2dada"
 })
 button.addEventListener("click", () => {
     let content = button.textContent;
@@ -56,13 +56,15 @@ clear.addEventListener("click", (e) => {
 })
 //Convert numbers from positive to negative and vice versa
 switchNumber.addEventListener("click", (e) => {
-    if(operator != "") {
-      secondInput = `-${secondInput}`
-      output.innerText = secondInput
-    } else if (operator == ""){
-      firstInput = `-${firstInput}`
-      output.innerText = firstInput
-    } 
+  if(operator != "" && Math.sign(secondInput) == "1") {
+    secondInput = `-${secondInput}`
+    output.innerText = secondInput
+  } else if (operator == "" && Math.sign(firstInput) == "1"){
+    firstInput = `-${firstInput}`
+    output.innerText = firstInput
+  } else {
+    output.innerText = "Not break"
+  }
 })
 //Implementation dot
 dot.addEventListener("click", (e) => {
