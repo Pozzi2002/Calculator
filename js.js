@@ -122,7 +122,7 @@ operators.forEach((op) => {
         }
           break;
           case "*":
-            output.innerText = (Number(firstInput) * Number(secondInput))
+            output.innerText = parseFloat((Number(firstInput) * Number(secondInput)).toFixed(5))
             if(output.innerText.length < 14) {
             firstInput = output.innerText
             secondInput = ""
