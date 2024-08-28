@@ -94,6 +94,7 @@ body {
     margin: 2px;
     box-shadow: 1px 1px 2px black;
     font-family: var(--my-font);
+    cursor: pointer;
 }
 
 #calculator .secondRow {
@@ -116,6 +117,7 @@ body {
     margin: 2px;
     box-shadow: 1px 1px 2px black;
     font-family: var(--my-font);
+    cursor: pointer;
 }
 #calculator .thirdRow {
     display:flex;
@@ -137,6 +139,7 @@ body {
     margin: 2px;
     box-shadow: 1px 1px 2px black;
     font-family: var(--my-font);
+    cursor: pointer;
 }
 #calculator .forthRow {
     display:flex;
@@ -158,6 +161,7 @@ body {
     margin: 2px;
     box-shadow: 1px 1px 2px black;
     font-family: var(--my-font);
+    cursor: pointer;
 }
 #calculator .fifthRow {
     display:flex;
@@ -179,4 +183,5 @@ body {
     margin: 2px;
     box-shadow: 1px 1px 2px black;
     font-family: var(--my-font);
+    cursor: pointer;
 }
